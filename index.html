@@ -1,109 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Srav | Portfolio</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravanthi | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sravanthi's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  </head>
-  
-  <body>
-    <h1>Welcome to My Portfolia</h1>
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="img.jpeg" alt="Sravanthi" class="about-img">
+                <p>Hello! I'm Sravanthi, intern at Zidio Development, web developer, and student at Centurion University of Technology and Management.</p>
+            </div>
+        </section>
 
-  <nav>
-    <a href="#About me">About Me</a>
-  
-    <a href="#projects">Projects</a>
-  
-    <a href="#Skills">Skills</a>
-  
-    <a href="#Demo video">Demo</a>
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Resume Builder</h3>
+                    <p>User can build their resume by logging in, built using the MERN stack</p>
+                </div>
+                <div class="project-card">
+                    <h3>Object Detector</h3>
+                    <p>The sensor can detect any object, built using machine learning with Python</p>
+                </div>
+            </div>
+        </section>
 
-    <a href="contact">Contact</a>
-<br>
-  </nav>
-    
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+            </ul>
+        </section>
 
-<section id="About me">
-  <h2>About Me</h2>
-  <img src="img.jpeg">
-  <h3><p>Hello! I'm sravanthi,intern at Zidio development , web developer, Student at centurion university of technology and Management.</p></h3>
-  
-</section>
-<section id="Projects">
-  <h2>Projects</h2>
- <h3> <p>Here are spme of the projects i've worked on: </p></h3>
- <table>
-  <tr>
-    <th>projects</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>Project 1: Resume builder</td>
-    <td>User can build their resume by login ,built it using the Mern stack</td>
-  </tr>
-  <tr>
-    <td>Project 2: object detector</td>
-    <td>The sensor can detect any object ,built it using machine learning with python</td>
-  </tr>
- </table>
-<br>
-<section id="Skills">
-<h2>Skills</h2>
-<h3><p>Here are the some of the technologies i specialize in:</p></h3>
-<ul>
-  <li>Html,css,java script</li>
-<li>java</li>
-</ul>
-</section><br>
-<section id="Demo">
-  <h2>Demo video</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/0Olv8zM_rps?si=zC0cLHVa8Cxx8-HN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section><br>
-<section id="Contact">
-  <h2>contact Me</h2>
-  <h3><p>Feel free to reach out to me using the form below:</p></h3>
-  <form>
-  <label>Name:</label>
-  <input type="text" placeholder="enter your name"><br>
+        <section id="demo" class="container">
+            <h2>Demo Video</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Olv8zM_rps?si=zC0cLHVa8Cxx8-HN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
 
-  <label>email:</label>
-  <input type="text" placeholder="enter your mail"><br>
+        <section id="contact" class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
 
-  <label>password:</label>
-  <input type="text" placeholder="enter your password"><br>
-
-  <label>phone:</label>
-  <input type="text" placeholder="enter your number"><br>
-
-  <label>age:</label>
-  <input type="text" placeholder="enter your age"><br>
-
-  <label>Birthday:</label>
-  <input type="date" placeholder="dd/mm/yyyy"><br>
-
-<p>Gender:</p>
-  <label>male</label>
- <input type="Radio" name="gen">
- <label>female</label>
- <input type="Radio" name="gen">
- <label>others</label>
- <input type="Radio" name="gen">
-
- <p>Upload resume:</p>
- <label>Choose file</label>
- <input type="file" name="Upload">
- <br>
-
-<button type="submit">send</button>
-</form>
-
-
-</section>
-
-<h1>@2024 sravanthi portfolio</h1>
-
-
-
-
-  </body>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sravanthi Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>

@@ -1,96 +1,51 @@
+header{
+  background-color: navy;
+  color: aliceblue;
+  padding: 10px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f0f4f8;
+}
+header h1{
+  color:beige;
+ font-size: 30px;
+ font-weight: 700;
+}
+.container{
+  max-width: 1200px;
+  margin:20px;
+  padding: 20px;
+}
+section {
+  margin-bottom: 40px;
+  background-color:#f0f4f8;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 4px solid blue;
+}
+section:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: #3498db;
+  color: #f0f4f8;
+}
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: #3498db;
+  color: #f0f4f8;
+}
+.about-content{
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.about-img{
 
-    h1{
-      background-color: burlywood;
-      color: aliceblue;
-      text-align: center;
-    }
-    h2{
-      background-color: brown;
-      color: greenyellow;
-    }
-    
-      button{
-        background-color:rgb(255, 0, 136);
-        color:rgb(237, 241, 237);
-        border-radius: 16px;
-        padding: 10px;
-        font-weight: 900;
-        font-size: 20px;
-
-      }
-      button:hover{
-        background-color: red;
-      color: #ff9800;
-      }
-      img{
-        height: 200px;
-        width:auto;
-        border-radius: 20px;
-      }
-      nav{
-        background-color: rgb(84, 84, 165);
-        color:beige;
-        padding: 20px;
-        text-align: center;
-      }
-      nav a{
-        color: aquamarine;
-        background-color: blueviolet;
-        padding: 20px;
-        font-size: medium;
-        font-weight: 100;
-        text-decoration: none;
-        text-transform:uppercase;
-      }
-      section{
-        box-shadow: 0 4px 12px #46005c;
-        border-radius: 20px;
-        padding: 20px;
-        margin: 5%auto;
-      }
-      table{
-        width: 50%;
-        text-align: center;
-      }
-      th{
-        color:black;
-        background-color:hotpink;
-      }
-      td{
-        color: aliceblue;
-        background-color: brown;
-      }
-      footer{
-        background-color: darkcyan;
-        color: antiquewhite;
-      }
-      #About Me {
-        background-color: #e3f2fd;
-        border: 5px solid #0288d1;
-      }
-      #Projects{
-        background-color: #fff3e0;
-        border-left: 5px solid #ff9800;
-      }
-       #Skills {
-        background-color: #e8f5e9;
-        border-left: 5px solid #4caf50;
-      }
-       #Demovideo{
-        background-color: #fce4ec;
-        border-left: 5px solid #e91e63;
-      }
-       #ContactMe{
-        background-color: #e1bee7;
-        border-left: 5px solid #ab47bc;
-      }
-       #Links {
-        background-color: #c8e6c9;
-        border-left: 5px solid #66bb6a;
-      }
-      section
-    
-
-      
-      
-
+height: 200px;
+width:200px;
+border-radius: 50%;
+border: 5px solid brown;
+}
