@@ -4,89 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sravanthi | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="img.jpeg">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Sravanthi's Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#demo">Demo</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="img.jpeg" alt="Sravanthi" class="about-img">
-                <p>Hello! I'm Sravanthi, intern at Zidio Development, web developer, and student at Centurion University of Technology and Management.</p>
-            </div>
-        </section>
-
-        <section id="projects" class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Resume Builder</h3>
-                    <p>User can build their resume by logging in, built using the MERN stack</p>
-                </div>
-                <div class="project-card">
-                    <h3>Object Detector</h3>
-                    <p>The sensor can detect any object, built using machine learning with Python</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#home" class="brand">Sravanthi</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
+        </div>
+    </nav>
 
-        <section id="demo" class="container">
-            <h2>Demo Video</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Olv8zM_rps?si=zC0cLHVa8Cxx8-HN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <img src="./ngsrav.jpg" alt="Profile" class="profile-photo">
+            <h1>Sravanthi Gurugubelli</h1>
+            <p>Welcome to my portfolio! I'm a passionate web developer.</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Sravanthi, a web developer with a passion for creating dynamic and responsive websites. With experience in modern web technologies, I love turning ideas into functional applications.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3>HTML & CSS</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react skill-icon"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-angular skill-icon"></i>
+                    <h3>Angular</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-leaf skill-icon"></i>
+                    <h3>Spring Boot</h3>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="container">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="resume copy.png" alt="Project 1">
+                    <h3>Resume Builder </h3>
+                    <p>The Resume Builder, built using the MERN stack (MongoDB, Express.js, React, Node.js), is a web application that allows users to create and customize professional resumes. It features an intuitive interface for inputting personal information, work experience, and skills, and generates downloadable resume templates.</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                <div class="card">
+                    <img src="" alt="Project 2">
+                    <h3>Lawex Landing Page</h3>
+                    <p>The "LawEx" website project is designed to present a comprehensive legal solutions platform. It features sections that introduce the company, outline its key features and benefits for lawyers, clients, and students, and provide details on business services such as registration and GST filing.</p>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" placeholder="Enter your message" required></textarea>
+                <div class="card">
+                    <img src="Screenshot 2024-08-10 140515 copy.png" alt="Project 3">
+                    <h3>Personal Portfolio</h3>
+                    <p>A brief description of Project 3. This project focused on Angular and TypeScript development.</p>
                 </div>
-                <button type="submit" class="btn">Send</button>
-            </form>
-        </section>
-    </main>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Sravanthi Portfolio. All rights reserved.</p>
+            <p>&copy; 2024 Sravanthi. All rights reserved.</p>
         </div>
     </footer>
 </body>
